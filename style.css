@@ -75,11 +75,12 @@ a:hover {
 .card {
     background-color: #fff;
     color: #333;
-    border-radius: 3px; 
-    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.25);
+    border-radius: 3px;
+    box-shadow: 0 4px 10px rgb(0 0 0 / 25%);
     padding: 20px;
-    margin: 10px;  
+    margin: 10px;
     min-width: 420px;
+    padding-bottom: 15px;
 }
 
 .card h3{
@@ -180,9 +181,10 @@ header h2{
     padding: 10px;
     border-radius: 3px;
     font-family: sftext;
-    top: 15px;
-    position: relative;
+    /* top: 15px; */
+    /* position: relative; */
     line-height: 18px;
+    margin-top: 28px;
 }
 .column a:hover {
     transition: all ease 2sec;
