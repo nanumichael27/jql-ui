@@ -163,7 +163,7 @@ header h2{
 
 .column {
     flex-direction: column;
-    height: 390px;
+    min-height: 410px;
 } 
 .column h3 {
     margin: 10px auto;
@@ -182,6 +182,7 @@ header h2{
     font-family: sftext;
     top: 15px;
     position: relative;
+    line-height: 18px;
 }
 .column a:hover {
     transition: all ease 2sec;
