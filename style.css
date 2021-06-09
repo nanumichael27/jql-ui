@@ -79,7 +79,7 @@ a:hover {
     box-shadow: 0 4px 10px rgba(0, 0, 0, 0.25);
     padding: 20px;
     margin: 10px;  
-    min-width: 380px;
+    min-width: 420px;
 }
 
 .card h3{
@@ -163,7 +163,7 @@ header h2{
 
 .column {
     flex-direction: column;
-    height: 450px;
+    height: 390px;
 } 
 .column h3 {
     margin: 10px auto;
@@ -178,8 +178,10 @@ header h2{
     background-color: var(--basic-color);
     color: var(--white-color);
     padding: 10px;
-    border-radius: 10px;
+    border-radius: 3px;
     font-family: sftext;
+    top: 29px;
+    position: relative;
 }
 .column a:hover {
     transition: all ease 2sec;
