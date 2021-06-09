@@ -77,9 +77,9 @@ a:hover {
     color: #333;
     border-radius: 3px;
     box-shadow: 0 4px 10px rgb(0 0 0 / 25%);
-    padding: 20px;
+    padding: 10px;
     margin: 10px;
-    min-width: 420px;
+    min-width: 450px;
     padding-bottom: 15px;
 }
 
@@ -161,19 +161,25 @@ header h2{
 
 
 /* First Section */
-
+.box1, .box2 {
+    flex-grow: 1;
+}
 .column {
     flex-direction: column;
-    min-height: 410px;
+    min-height: 450px;
 } 
 .column h3 {
     margin: 10px auto;
+    word-wrap: break-word;
+    text-align: center;
 }
 .column img {
     margin: 10px auto;
+    height: 250px;
 }
 .column iframe {
     margin: 10px auto;
+    height: 250px;
 }
 .column a {
     background-color: var(--basic-color);
@@ -181,9 +187,6 @@ header h2{
     padding: 10px;
     border-radius: 3px;
     font-family: sftext;
-    /* top: 15px; */
-    /* position: relative; */
-    line-height: 18px;
     margin-top: 28px;
 }
 .column a:hover {
