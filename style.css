@@ -74,7 +74,7 @@ a:hover {
     box-shadow: 0 4px 10px rgb(0 0 0 / 25%);
     padding: 10px;
     margin: 10px;
-    min-width: 450px;
+    width: 450px;
     padding-bottom: 15px;
 }
 
@@ -182,6 +182,9 @@ header h2 {
 
 /*Lager Screen*/
 @media (min-width: 1440px) {
+    .card{
+        min-width: 600px;
+    }
     body {
         max-width: 2500px;
     }
@@ -217,6 +220,7 @@ header h2 {
     }
     
     .card{
+        width: unset;
         min-width: 350px;
     }
 }
