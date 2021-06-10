@@ -83,19 +83,14 @@ a:hover {
     padding-bottom: 15px;
 }
 
-.card h3{
-    font-family: sfdisplay;
-    font-size: 20px;
-}
-
 /* MAIN STYLINGS */
 
 /* Styling the header elements */
-header{
+header {
     padding: 0;
 }
 
-header h2{
+header h2 {
     font-family: sfdisplay;
     font-size: 24px;
 }
@@ -172,6 +167,8 @@ header h2{
     margin: 10px auto;
     word-wrap: break-word;
     text-align: center;
+    font-family: sfdisplay;
+    font-size: 20px;
 }
 .column img {
     margin: 10px auto;
@@ -190,9 +187,26 @@ header h2{
     margin-top: 28px;
 }
 .column a:hover {
-    transition: all ease 2sec;
+    transition: all ease 2s;
     transform: scale(0.98);
 } 
+
+
+
+
+
+/*Lager Screen*/
+@media (min-width: 1500px) {
+    body {
+        max-width: 2500px;
+    }
+    .container {
+        max-width: 1400px;
+    }
+}
+
+
+
 
 
 
