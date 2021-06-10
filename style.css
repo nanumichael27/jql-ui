@@ -76,6 +76,7 @@ a:hover {
     margin: 10px;
     width: 450px;
     padding-bottom: 15px;
+    padding-top: 0;
 }
 
 /* MAIN STYLINGS */
@@ -182,7 +183,7 @@ header h2 {
 
 /*Lager Screen*/
 @media (min-width: 1440px) {
-    .card{
+    /* .card{
         min-width: 600px;
     }
     body {
@@ -190,17 +191,17 @@ header h2 {
     }
     .container {
         max-width: 1400px;
-    }
+    } */
     .column h3 {
         font-size: 24px;
     }
-    .column {
+    /* .column {
         min-height: 570px;
     }
 
     .column a{
         margin-top: 100px;
-    }
+    } */
 }
 
 
@@ -210,10 +211,10 @@ header h2 {
         text-align: center;
     }
     .flex {
-        flex-direction: column;zz
+        flex-direction: column;
     }
     .processing-area {
-        padding: -10px;
+        padding: 10px;
         padding-left: 7px;
     }
 
