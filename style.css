@@ -196,7 +196,7 @@ header h2 {
 
 
 /*Lager Screen*/
-@media (min-width: 1500px) {
+@media (min-width: 1440px) {
     body {
         max-width: 2500px;
     }
