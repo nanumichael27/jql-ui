@@ -203,6 +203,14 @@ header h2 {
     .container {
         max-width: 1400px;
     }
+
+    .column{
+        min-height: 570px;
+    }
+
+    .column a{
+        margin-top: 100px;
+    }
 }
 
 
