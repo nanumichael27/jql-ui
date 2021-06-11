@@ -174,6 +174,7 @@ header h2 {
     border-radius: 3px;
     font-family: sftext;
     margin-top: 28px;
+    cursor: pointer;
 }
 .column a:hover {
     transition: all ease 2s;
