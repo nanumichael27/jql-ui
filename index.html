@@ -1,16 +1,18 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-        <meta charset="utf-8">
-        <title>Jql extensions</title>
-        <meta http-equiv="X-UA-Compatible" content="IE=edge">
-        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-        <link rel="stylesheet" href="style.css">   
+    <meta charset="utf-8">
+    <title>Jql extensions</title>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <link rel="stylesheet" href="style.css">
 </head>
+
 <body>
     <header class="second-header">
         <div class="logo-area flex">
-            <div class="logo"><img src="svg-images/logo 1.svg" alt="logo"></div>            
+            <div class="logo"><img src="svg-images/logo 1.svg" alt="logo"></div>
             <div>
                 <h2>What to explore with JQL search Extensions?</h2>
                 <p>Discover the power of JQL using the most powerful app on the marketplace</p>
@@ -38,15 +40,20 @@
             </div>
             <div class="flex column card box2">
                 <h3>Watch our getting started video <br> </h3>
-                <iframe width="100%" src="https://www.youtube.com/embed/HC_K71veg20" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-                <a href="#">Watch video</a>
+                <div id="gettingstartedvideo" width="100%" src="https://www.youtube.com/embed/HC_K71veg20"
+                    title="YouTube video player" frameborder="0"
+                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                    allowfullscreen></div>
+                <a href="#" id="watchvideobutton">Watch video</a>
             </div>
         </div>
         <div class="flex">
             <div class="flex column card box1">
                 <h3>Get a demo tour of the produce <br> </h3>
                 <img src="svg-images/image-book-a-demo.svg" alt="guide">
-                <a href="" onclick="Calendly.initPopupWidget({url: 'https://calendly.com/jse-team/demo'});return false;">Book a demo</a>
+                <a href=""
+                    onclick="Calendly.initPopupWidget({url: 'https://calendly.com/jse-team/demo'});return false;">Book a
+                    demo</a>
             </div>
             <div class="flex column card box2">
                 <h3>Read the product documentation <br> </h3>
@@ -55,9 +62,36 @@
             </div>
         </div>
     </section>
-            <!-- Calendly link widget begin -->
-<link href="https://assets.calendly.com/assets/external/widget.css" rel="stylesheet">
-<script src="https://assets.calendly.com/assets/external/widget.js" type="text/javascript" async></script>
-<!-- Calendly link widget end -->
+    <!-- Calendly link widget begin -->
+    <link href="https://assets.calendly.com/assets/external/widget.css" rel="stylesheet">
+    <script src="https://assets.calendly.com/assets/external/widget.js" type="text/javascript" async></script>
+    <!-- Calendly link widget end -->
+
+
+    <script>
+        // Load the IFrame Player API code asynchronously.
+        var tag = document.createElement('script');
+        tag.src = "https://www.youtube.com/player_api";
+        var firstScriptTag = document.getElementsByTagName('script')[0];
+        firstScriptTag.parentNode.insertBefore(tag, firstScriptTag);
+      
+        // Replace the 'ytplayer' element with an <iframe> and
+        // YouTube player after the API code downloads.
+        var player;
+        function onYouTubePlayerAPIReady() {
+          player = new YT.Player('gettingstartedvideo', {
+            height: '100%',
+            width: '100%',
+            videoId: 'HC_K71veg20'
+          });
+        }
+
+        const watchVideoButton = document.getElementById('watchvideobutton');
+        watchVideoButton.addEventListener('click', () => {
+            player.playVideo();
+        });
+
+      </script>
 </body>
+
 </html>
