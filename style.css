@@ -197,10 +197,10 @@ header h2 {
   /* Modal Content/Box */
   .modal-content {
     background-color: #fefefe;
-    margin: 15% auto; 
+    margin: 5% auto; 
     padding: 20px;
     border: 1px solid #888;
-    width: 75%; 
+    width: 80%; 
     height: 75vh;
   }
 /* The Close Button of modal*/
