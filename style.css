@@ -207,7 +207,8 @@ header h2 {
     padding: 0;
     border: 1px solid #888;
     width: 80%; 
-    height: 60vw;
+    height: 48vw;
+    max-height: 500px;
     display: none;
   }
 /* The Close Button of modal*/
@@ -273,4 +274,5 @@ header h2 {
         width: unset;
         min-width: 350px;
     }
+    
 }
