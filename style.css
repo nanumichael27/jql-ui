@@ -276,3 +276,10 @@ header h2 {
     }
     
 }
+
+@media (max-width: 400px){
+    .modal-content{
+        width: 90%;
+        left: 3%;
+    }
+}
