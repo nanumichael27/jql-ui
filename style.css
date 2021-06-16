@@ -74,7 +74,7 @@ a:hover {
     box-shadow: 0 4px 10px rgb(0 0 0 / 25%);
     padding: 10px;
     margin: 10px;
-    width: 450px;
+    width: 450px !important;
     padding-bottom: 15px;
     padding-top: 0;
 }
