@@ -216,7 +216,7 @@ header h2 {
     color: #aaa;
     float: right;
     font-size: 31px;
-    font-weight: bold;
+    font-weight:normal;
     position: absolute;
     right: 8px;
   }
@@ -274,12 +274,10 @@ header h2 {
         width: unset !important;
         width: 350px !important;
     }
-    
-}
 
-@media (max-width: 400px){
     .modal-content{
-        width: 90%;
-        left: 3%;
+        width: 100%;
+        left: 0;
     }
+    
 }
