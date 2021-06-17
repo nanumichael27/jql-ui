@@ -1,4 +1,3 @@
-
 @font-face {
     font-family: sftext;
     src: url(fonts/System\ San\ Francisco\ Text\ Medium.ttf);
@@ -9,13 +8,14 @@
     src: url(fonts/System\ San\ Francisco\ Display\ Regular.ttf);
 }
 
-    /* UTILITIES */
+/* UTILITIES */
 :root {
     --basic-color: #0052cc;
     --dark-color: #313030;
     --white-color: #fff;
     --dark-white: #fafbfc;
 }
+
 body {
     font-family: sftext;
     color: #333;
@@ -24,42 +24,48 @@ body {
     max-width: 2000px;
 }
 
-p{
+p {
     font-size: 14px;
 }
 
-.sf-display{
+.sf-display {
     font-family: sfdisplay;
 }
 
 
-.sf-text{
+.sf-text {
     font-family: sftext;
 }
 
 * {
     box-sizing: border-box;
     padding: 0;
-    margin: 0;    
+    margin: 0;
 }
+
 .container {
     max-width: 1000px;
     margin: 0 auto;
 }
+
 img {
     width: 100%;
 }
+
 ul {
     list-style: none;
 }
+
 a {
     text-decoration: none;
     color: #fff;
 }
+
 a:hover {
     text-decoration: none;
     color: #fff;
 }
+
 .flex {
     display: flex;
     justify-content: center;
@@ -90,20 +96,24 @@ header h2 {
     font-family: sfdisplay;
     font-size: 24px;
 }
+
 .first-header {
     justify-content: space-between;
 }
+
 .logo {
-   margin-right: 10px;
+    margin-right: 10px;
 }
+
 .logo-area {
     justify-content: start;
     padding: 20px;
 }
 
-.app-status{
+.app-status {
     margin-right: 5px;
 }
+
 .app-status .green {
     color: #006644;
     background-color: #e3fcef;
@@ -119,6 +129,7 @@ header h2 {
     padding: 3px;
     font-size: 11px;
 }
+
 .processing-area {
     justify-content: space-between;
     padding: 10px;
@@ -134,24 +145,27 @@ header h2 {
     height: 10px;
     margin-top: 15px;
 }
-      
- #progress {
-     height: 10px;
-     border-radius: 20px;       
-     width: 5%;
-     max-width: 100%;
-     background-color: var(--basic-color);
+
+#progress {
+    height: 10px;
+    border-radius: 20px;
+    width: 5%;
+    max-width: 100%;
+    background-color: var(--basic-color);
 }
 
 
 /* First Section */
-.box1, .box2 {
+.box1,
+.box2 {
     flex-grow: 1;
 }
+
 .column {
     flex-direction: column;
     min-height: 450px;
-} 
+}
+
 .column h3 {
     margin: 10px auto;
     word-wrap: break-word;
@@ -159,14 +173,17 @@ header h2 {
     font-family: sfdisplay;
     font-size: 20px;
 }
+
 .column img {
     margin: 10px auto;
     height: 250px;
 }
+
 .column iframe {
     margin: 10px auto;
     height: 250px;
 }
+
 .column a {
     background-color: var(--basic-color);
     color: var(--white-color);
@@ -176,27 +193,29 @@ header h2 {
     margin-top: 28px;
     cursor: pointer;
 }
+
 .column a:hover {
     transition: all ease 2s;
     transform: scale(0.98);
-} 
+}
+
 /* The Oveerlay (background) */
 .overlay {
     /* display: none;  */
-    position: fixed; 
-    z-index: 1; 
+    position: fixed;
+    z-index: 1;
     left: 0;
     top: 0;
     width: 100%;
-    height: 100%; 
+    height: 100%;
     overflow: auto;
-    background-color: rgb(0,0,0); 
-    background-color: rgba(0,0,0,0.4);
+    background-color: rgb(0, 0, 0);
+    background-color: rgba(0, 0, 0, 0.4);
     display: none;
-  }
-  
-  /* Modal Content/Box */
-  .modal-content {
+}
+
+/* Modal Content/Box */
+.modal-content {
     /* display: none; */
     position: fixed;
     z-index: 2;
@@ -210,27 +229,29 @@ header h2 {
     height: 45vw;
     max-height: 646px;
     display: none;
-  }
+}
+
 /* The Close Button of modal*/
 .close {
     color: #aaa;
     float: right;
     font-size: 31px;
-    font-weight:normal;
+    font-weight: normal;
     position: absolute;
     right: 8px;
-  }
-  
-  .close:hover,
-  .close:focus {
+}
+
+.close:hover,
+.close:focus {
     color: black;
     text-decoration: none;
     cursor: pointer;
-  }
+}
 
 
 /*Lager Screen*/
 @media (min-width: 1441px) {
+
     /* .card{
         min-width: 600px;
     }
@@ -243,6 +264,7 @@ header h2 {
     .column h3 {
         font-size: 24px;
     }
+
     /* .column {
         min-height: 570px;
     }
@@ -258,26 +280,31 @@ header h2 {
     header {
         text-align: center;
     }
+
     .flex {
         flex-direction: column;
     }
+
     .processing-area {
         padding: 10px;
         padding-left: 7px;
     }
 
-    .app-status{
+    .app-status {
         margin-top: 20px;
     }
-    
-    .card{
+
+    .card {
         width: unset !important;
         width: 350px !important;
     }
 
-    .modal-content{
+    .modal-content {
         width: 100%;
         left: 0;
+        top: 25%;
+        margin: 0 auto;
+        height: 55vw;
     }
-    
+
 }
