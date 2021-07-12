@@ -173,7 +173,7 @@ header h2 {
     height: 400px;
 }
 .video-link  {
-    background-color: #0052cc;
+    /* background-color: #0052cc; */
     height: 100%;
 }
 .video-text, .video-link {
@@ -198,7 +198,7 @@ header h2 {
 
 
 .column iframe {
-    margin: 5px;
+    /* margin: 5px; */
     height: 100%;
 }
 
