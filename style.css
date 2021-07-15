@@ -291,6 +291,11 @@ header h2 {
     }
 }
 
+/* Remove watch on youtube link */
+.ytp-impression-link{
+    display: none;
+}
+
 /* Between screens */
 @media screen and (max-width: 960px) and (min-width: 860px) {
     .container {
